@@ -110,7 +110,6 @@ func (m moGuService) GetPlanID(token, userId string) string {
 // SignIn signIn Logic
 func (m moGuService) SignIn(token, planID, userId string) (bool, string) {
 	description := os.Getenv("DESCRIPTION")
-        country := os.Getenv("COUNTRY")
         address := os.Getenv("ADDRESS")
 	city := os.Getenv("CITY")
 	province := os.Getenv("PROVINCE")
@@ -125,7 +124,7 @@ func (m moGuService) SignIn(token, planID, userId string) (bool, string) {
 	body := &model.SignInModel{
 		Device:      "Android",
 		PlanID:      planID,
-		Country:     country,
+		Country:     "中国",
 		Type:        types, // 默认打卡上班
 		Description: description,
 		State:       "NORMAL",
