@@ -22,7 +22,7 @@ var (
 // return currentWeek, mondayTime, sundayTime
 func WeeklyPicker(end time.Time) (int, string, string) {
 	// 周记开始时间
-	startWeekTime := "2021-12-6"
+	startWeekTime := "2021-12-06"
 	start, _ := time.Parse("2006-01-02", startWeekTime)
 	currentWeek := int(end.Sub(start).Hours())/24/7 + 1
 	weekDay := WeekDay[end.Weekday().String()]
