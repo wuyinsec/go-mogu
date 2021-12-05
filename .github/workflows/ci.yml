@@ -12,6 +12,8 @@ jobs:
     env:
       ACCOUNT: ${{ secrets.ACCOUNT }}
       PASSWORD: ${{ secrets.PASSWORD }}
+      DESCRIPTION: ${{ secrets.DESCRIPTION }}
+      COUNTRY: ${{ secrets.COUNTRY }}
       KEY: ${{ secrets.KEY }}
       ADDRESS: ${{ secrets.ADDRESS }}
       CITY: ${{ secrets.CITY }}
