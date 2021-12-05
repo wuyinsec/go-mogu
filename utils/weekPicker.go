@@ -49,7 +49,7 @@ func WeeklyPicker(end time.Time) (int, string, string) {
 	firstDay, _ := time.ParseDuration(fmt.Sprintf("%vh", first*24))
 	lastDay, _ := time.ParseDuration(fmt.Sprintf("%vh", last*24))
 
-	mondayTime := end.Add(firstDay).Format("2006-01-02") + " 00:00:00"
+	mondayTime := end.Add(firstDay).Format("2021-12-06") + " 00:00:00"
 	sundayTime := end.Add(lastDay).Format("2006-01-02") + " 23:59:59"
 	fmt.Printf("第%v周的第一天为%v\n第七天为%v\n", currentWeek, mondayTime, sundayTime)
 	return currentWeek, mondayTime, sundayTime
