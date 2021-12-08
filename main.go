@@ -23,7 +23,7 @@ func main() {
 		log.Fatal(title)
 	}
 	if service.SendMessage(title, message) {
-		fmt.Println("打卡成功")
+		fmt.Println("打卡成功,不在周报时间内~ 今天不用写周报")
 	}
 
 	// 写周记
@@ -33,7 +33,7 @@ func main() {
 		fmt.Println(msg)
 	} else {
 		if service.SendMessage(headline, msg) {
-			fmt.Println("打卡成功")
+			fmt.Println("打卡成功，并且本周周报已完成")
 		}
 	}
 }
