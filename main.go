@@ -33,7 +33,7 @@ func main() {
 		fmt.Println(msg)
 	} else {
 		if service.SendMessage(headline, msg) {
-			fmt.Println("打卡成功，并且本周周报已完成了")
+			fmt.Println("打卡成功，并且本周周报已完成了!")
 		}
 	}
 }
