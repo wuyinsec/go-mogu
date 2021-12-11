@@ -14,7 +14,7 @@ import (
 func RandomSentence() (string, error) {
 	rand.Seed(time.Now().UnixNano())
 	var sentence model.SentenceModel
-	resp, err := http.Get("https://raw.githubusercontent.com/ToWeLong/go-mogu/main/model/sentence.json")
+	resp, err := http.Get("https://raw.githubusercontent.com/wuyinsec/go-mogu/main/model/sentence.json")
 	if err != nil {
 		return "", err
 	}
